@@ -1,25 +1,7 @@
-// Interface para Reprodutor Musical
-public interface ReprodutorMusical {
-    void tocar();
-    void pausar();
-    void selecionarMusica(String musica);
-}
+import Interfaces.AparelhoTelefonico;
+import Interfaces.NavegadorInternet;
+import Interfaces.ReprodutorMusical;
 
-// Interface para Aparelho Telefônico
-public interface AparelhoTelefonico {
-    void ligar(String numero);
-    void atender();
-    void iniciarCorreioVoz();
-}
-
-// Interface para Navegador na Internet
-public interface NavegadorInternet {
-    void exibirPagina(String url);
-    void adicionarNovaAba();
-    void atualizarPagina();
-}
-
-// Classe iPhone que implementa todas as interfaces
 public class iPhone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
 
     public void tocar() {
